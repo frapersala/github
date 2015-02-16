@@ -1,0 +1,18 @@
+echo 1 Muestra los nombres
+echo 2 Muestra las edades
+echo 3 Muestra las poblaciones
+echo 4 Muestra los telefonos
+echo  Elija una opcion 1,2,3 y 4
+
+read x
+
+case $x in
+
+1) cut -f1 -d":" Agenda.txt;;
+2) cut -f2 -d":" Agenda.txt;;
+3) cut -f3 -d":" Agenda.txt;;
+4) cut -f4 -d":" Agenda.txt;;
+
+*)error;;
+
+esac
